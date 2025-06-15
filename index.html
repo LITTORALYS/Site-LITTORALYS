@@ -137,14 +137,182 @@
         <li><a href="suivi-environnemental.pdf" target="_blank">Suivi environnemental</a></li>
     </ul>
 </section>
-<footer style="width: 100%; background: rgba(0, 38, 77, 0.9); color: white; padding: 20px 10px; text-align: center; position: relative;">
+<footer style="width: 100%; background: rgba(0, 38, 77, 0.9); color: white; padding: 20px 10px; text-align: center;">
     <p>Pour nous contacter :</p>
     <p><strong>SARL LITTORALYS</strong> - BP 70 99 - 98890 Païta</p>
-    <p>Tél : 44.38.79 - 70.82.50 | Email : <a href="mailto:littoralys@mls.nc" style="color: white;">littoralys@mls.nc</a></p>
+    <p>Tél : 44.38.79 - 70.82.50 | Email : <a href="mailto:littoralys@mls.nc" style="color: white; text-decoration: underline;">littoralys@mls.nc</a></p>
     <p>© 2025 LITTORALYS - Pour un développement durable du littoral</p>
 </footer>
 </section>
 
+
+</body>
+</html>
+
+
+ChatGPT a dit :
+Parfait, merci beaucoup, c’est très clair maintenant : je vois tout ton fichier complet.
+
+Maintenant je vais te donner ton code corrigé et optimisé avec :
+
+Un vrai footer qui reste toujours en bas de la page, même quand il y a peu de contenu.
+
+Toujours 100% largeur.
+
+On corrige aussi quelques petites erreurs HTML que tu avais (notamment la balise <div> qui était mal fermée dans actualites).
+
+Voici ton fichier corrigé et prêt à l’emploi :
+
+html
+Copier
+Modifier
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta name="google-site-verification" content="b-T98S7jeaK--Vf-dws2Ayo4Uvlx9le3jCDGzGJRShQ" />
+    <title>Littoralys - Expert en aménagement du littoral en Nouvelle-Calédonie, Pacifique Sud</title>
+    <meta name="description" content="Littoralys : bureau d'études spécialisé en aménagement en Nouvelle-Calédonie. valorisation du littoral, génie côtier, suivi environnemental, étuded'impact.">
+    <meta name="keywords" content="Littoralys, bureau d'études, environnement, littoral, maritime, Nouvelle-Calédonie, étude d'impact, génie côtier, suivi environnemental, érosion, aménagement côtier, travaux maritimes, dragage, ponton, DPM">
+    <meta name="author" content="Littoralys">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        main {
+            flex: 1;
+        }
+        body { font-family: Arial, sans-serif; background: #001f33 url('fond-topo.jpg') no-repeat center top; background-size: cover; color: #ffffff; }
+        header { background: rgba(0, 38, 77, 0.9); color: white; padding: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.5); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+        header img { height: 140px; }
+        .coordonnees { font-size: 14px; text-align: right; }
+        nav { margin-top: 10px; width: 100%; text-align: center; }
+        nav a { color: #ffffff; text-decoration: none; margin: 0 15px; font-weight: bold; }
+        .presentation { background: rgba(255,255,255,0.9); padding: 40px 20px; max-width: 1300px; margin: 10px auto; border-radius: 8px; color: #00264d; display: flex; align-items: center; justify-content: space-between; text-align: justify; flex-wrap: wrap; }
+        .presentation-text { width: 50%; }
+        .presentation img { max-width: 45%; border-radius: 50%; margin-left: 20px; }
+        .domaines { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-top: 30px; }
+        .bloc { background: rgba(255, 255, 255, 0.7); padding: 20px; border-radius: 8px; color: #00264d; text-align: left; }
+        .bloc h3 { border-bottom: 2px solid #ccc; padding-bottom: 10px; margin-bottom: 15px; color: #0077b6; }
+        footer { width: 100%; background: rgba(0, 38, 77, 0.9); color: white; padding: 20px 10px; text-align: center; }
+        footer a { color: white; text-decoration: underline; }
+        @media (max-width: 1024px) { .domaines { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 600px) { .domaines { grid-template-columns: 1fr; } }
+        .presentation-images { display: flex; justify-content: space-around; align-items: center; margin-top: 20px; flex-wrap: wrap; }
+        .projet { text-align: center; }
+        .projet img { max-width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.3); }
+        .projet p { margin-top: 10px; font-weight: bold; color: #00264d; }
+    </style>
+</head>
+<body>
+
+<main>
+
+<header>
+    <img src="logo-littoralys.png" alt="Littoralys Logo">
+    <div class="coordonnees">
+        SARL LITTORALYS - BP 70 99 - 98890 Païta<br>
+        Tél : 44.38.79 - 70.82.50<br>
+        <a href="mailto:littoralys@mls.nc" style="color: white;">littoralys@mls.nc</a>
+    </div>
+    <nav>
+        <a href="#presentation">Présentation</a>
+        <a href="#domaines">Domaines</a>
+        <a href="#references">Références</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="presentation" id="presentation">
+    <div class="presentation-text">
+        <h2>Pour un développement durable du littoral</h2>
+        <p>La société SARL LITTORALYS, membre du Cluster Maritime de Nouvelle-Calédonie, a été créée en 2013 par Nicolas RAFECAS en tant que consultant indépendant en Environnement & Aménagement. Les compétences de LITTORALYS sont principalement axées sur le domaine littoral et maritime, liées à l’expérience de son gérant exerçant depuis 2006 en Nouvelle-Calédonie. LITTORALYS de par son approche pluridisciplinaire tant technique, réglementaire, environnementale que socio-économique propose son assistance dans toutes les phases de votre projet, de la conception à l’élaboration des demandes d’autorisation, jusqu’au suivi de chantier. En effet, l’évaluation des contraintes, physiques, écologiques et socio-économiques en amont permet de concevoir un projet mieux intégré au site et d’optimiser les coûts car l’essentiel des impacts peuvent être anticipés et réduits voir évités dès la définition du projet.</p>
+        <p><a href="CV-Nicolas-Rafecas.pdf" target="_blank">Télécharger le CV de Nicolas RAFECAS</a></p>
+    </div>
+    <img src="presentation.jpg" alt="Présentation Littoralys">
+</section>
+
+<section class="presentation" id="domaines">
+    <h2>Nos domaines d'intervention</h2>
+    <div class="domaines">
+        <div class="bloc">
+            <h3>Valorisation du littoral</h3>
+            <ul>
+                <li>Stratégies d'aménagement</li>
+                <li>Aménagement des plages et îlots</li>
+                <li>Profil de baignade (ATTRACTIV PLAGE)</li>
+                <li>Base nautique, balisage, piscine flottante</li>
+            </ul>
+        </div>
+        <div class="bloc">
+            <h3>Ouvrages et travaux maritimes</h3>
+            <ul>
+                <li>Pontons, wharfs, dragage</li>
+                <li>Zones de mouillage organisées</li>
+                <li>Réparation navale</li>
+            </ul>
+        </div>
+        <div class="bloc">
+            <h3>Génie côtier / Gestion du trait de côte</h3>
+            <ul>
+                <li>Diagnostics d'érosion</li>
+                <li>Solutions fondées sur la nature</li>
+                <li>Stabilisation de plages</li>
+            </ul>
+        </div>
+        <div class="bloc">
+            <h3>Environnement</h3>
+            <ul>
+                <li>Études d’impact et notices</li>
+                <li>Gestion des espaces naturels</li>
+                <li>Suivi environnemental de chantier</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="presentation" id="actualites">
+    <div class="presentation-text">
+        <h2>Actualités / Projets en cours</h2>
+        <p>Voici nos projets en cours.</p>
+    </div>
+    <div class="presentation-images">
+        <div class="projet">
+            <img src="projet1.jpg" alt="Projet 1 Littoralys">
+            <p>Stratégie d'adaptation et d'aménagement durable de la plage de Poé VITAL POE, Bourail</p>
+        </div>
+        <div class="projet">
+            <img src="projet2.jpg" alt="Projet 2 Littoralys">
+            <p>Stratégie d'adaptation et d'aménagement durable de l'île aux Canards, Nouméa</p>
+        </div>
+    </div>
+</section>
+
+<section class="presentation" id="references">
+    <h2>Nos références (PDF)</h2>
+    <ul>
+        <li><a href="valorisation-littoral.pdf" target="_blank">Valorisation du littoral</a></li>
+        <li><a href="travaux-maritimes.pdf" target="_blank">Ouvrages et travaux maritimes</a></li>
+        <li><a href="genie-cotier.pdf" target="_blank">Génie côtier - Gestion du trait de côte</a></li>
+        <li><a href="etudes-impact.pdf" target="_blank">Études d’impact</a></li>
+        <li><a href="espaces-naturels.pdf" target="_blank">Gestion des espaces naturels</a></li>
+        <li><a href="suivi-environnemental.pdf" target="_blank">Suivi environnemental</a></li>
+    </ul>
+</section>
+
+</main>
+
+<<footer style="width: 100%; background: rgba(0, 38, 77, 0.9); color: white; padding: 20px; text-align: center; box-shadow: 0 -2px 5px rgba(0,0,0,0.5);">
+    <p>Pour nous contacter :</p>
+    <p><strong>SARL LITTORALYS</strong> - BP 70 99 - 98890 Païta</p>
+    <p>Tél : 44.38.79 - 70.82.50 | Email : <a href="mailto:littoralys@mls.nc" style="color: white; text-decoration: underline;">littoralys@mls.nc</a></p>
+    <p>© 2025 LITTORALYS - Pour un développement durable du littoral</p>
+</footer>
 
 </body>
 </html>
