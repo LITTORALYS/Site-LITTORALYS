@@ -33,10 +33,30 @@
         footer a { color: white; text-decoration: underline; }
         @media (max-width: 1024px) { .domaines { grid-template-columns: repeat(2, 1fr); } }
         @media (max-width: 600px) { .domaines { grid-template-columns: 1fr; } }
-        .presentation-images { display: flex; justify-content: center; align-items: center; margin-top: 20px; gap: 40px; flex-wrap: wrap; }
-        .projet { text-align: center; max-width: 400px; margin: 0 auto; }
-        .projet img { max-width: 400px; width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.3); }
-        .projet p { margin-top: 10px; font-weight: bold; color: #00264d; }
+
+        /* Modification de l'espace entre les projets */
+        .presentation-images {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        .projet {
+            text-align: center;
+            max-width: 400px;
+            margin: 0 20px; /* <-- espacement horizontal entre les deux projets */
+        }
+        .projet img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+        .projet p {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #00264d;
+        }
     </style>
 </head>
 
@@ -144,4 +164,3 @@
 
 </body>
 </html>
-
